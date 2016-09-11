@@ -3,7 +3,6 @@ package pl.akademiakodu.homework3;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
@@ -30,7 +29,6 @@ public class ImageActivity extends AppCompatActivity {
             Picasso.with(this).load("http://images.clipartpanda.com/smile-clipart-smile-clip-art-66-350x350.jpg").into(imageView);
         } else {
             Picasso.with(this).load("http://images.clipartpanda.com/clipart-smiley-face-McLkKabca.jpeg").into(imageView);
-            Toast.makeText(this, "Access denied", Toast.LENGTH_LONG).show();
         }
     }
 }
