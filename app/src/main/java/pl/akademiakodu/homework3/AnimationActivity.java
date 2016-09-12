@@ -21,7 +21,7 @@ public class AnimationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_animation);
         ButterKnife.bind(this);
 
         final AnimationDrawable animation = (AnimationDrawable) layout.getBackground();
