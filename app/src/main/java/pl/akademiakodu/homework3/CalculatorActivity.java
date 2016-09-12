@@ -302,15 +302,12 @@ public class CalculatorActivity extends AppCompatActivity implements View.OnClic
                             result = firstNumber - secondNumber;
                             break;
                         case "/":
-                            try {
-                                if (secondNumber == 0) {
-                                    throw new ArithmeticException();
-                                } else {
-                                    result = firstNumber / secondNumber;
-                                }
-                            } catch (ArithmeticException e) {
+                            if (secondNumber == 0) {
                                 alertDialog("Forbidden dividing by zero");
+                            } else {
+                                result = firstNumber / secondNumber;
                             }
+
                             break;
 
                         case "*":
