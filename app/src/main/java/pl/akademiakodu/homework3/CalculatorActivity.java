@@ -307,9 +307,7 @@ public class CalculatorActivity extends AppCompatActivity implements View.OnClic
                             } else {
                                 result = firstNumber / secondNumber;
                             }
-
                             break;
-
                         case "*":
                             result = firstNumber * secondNumber;
                             break;

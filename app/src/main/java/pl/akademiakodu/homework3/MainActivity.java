@@ -3,7 +3,7 @@ package pl.akademiakodu.homework3;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
+import android.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputType;
@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
 
     StringBuffer login = new StringBuffer();
     StringBuffer pass = new StringBuffer();
-    String correctLog = "oskar";
-    String correctPass = "password12";
+    String correctLog = "admin";
+    String correctPass = "password";
 
     public void alertDialog(String message) {
         AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this).create();
